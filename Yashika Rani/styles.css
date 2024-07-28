@@ -1,0 +1,163 @@
+
+
+/* Root element */
+html {
+    font: 20px/1.5 "Arial", sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Body and General Styling */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+footer {
+    font-size: 0.8rem;
+    clear: both;
+    background: linear-gradient(to right, #622d1e, #e890ccf0);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ed5017, #e5a6d1f0);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Main Layout */
+main {
+    float: left;
+    width: 70%;
+    padding-right: 2rem;
+}
+
+aside {
+    float: right;
+    width: 30%;
+}
+
+/* Sections inside Main */
+#early-life, #musical-journey, #popular-songs, #legacy {
+    margin-bottom: 2rem;
+}
+
+#musical-journey img {
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#musical-journey figure {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    color: #555;
+    text-align: center;
+}
+
+q {
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    color: #333;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 5px #aaa;
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+iframe {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Aside styles */
+aside h2 {
+    font-variant: small-caps;
+    color: #444;
+    text-align: center;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #555;
+    line-height: 2;
+}
+
+aside ul li a:hover {
+    color: #ff7e5f;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control[type="submit"] {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-control[type="submit"]:hover {
+    background-color: #feb47b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+    main, aside {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    main {
+        margin-bottom: 2rem;
+    }
+}
